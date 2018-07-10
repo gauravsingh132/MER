@@ -59,9 +59,7 @@ public class Bike_mer extends Base {
 				//pdf link
 				String pdf_url=Bikeutility.pdf_link(j, driver);
 				System.out.println(pdf_url);
-				//driver.findElement(By.xpath("//div[@id='divQuotingResults']/div[2]/div[@class='promoHead']//a[@class='qp-mer-phone ' and @partnername='"+insurer+"']")).click();
-				//Thread.sleep(4000);
-				
+								
 				String[] phonemer=Bikeutility.phonemerclick(i,j,driver);
 				System.out.println("phone mer button visible"+ phonemer[0]);
 				System.out.println("phone mer typ visible"+ phonemer[1]);
@@ -70,16 +68,7 @@ public class Bike_mer extends Base {
 				String[] emailmer=Bikeutility.emailmerclick(i,j,driver);
 				System.out.println("email mer button visible"+ emailmer[0]);
 				System.out.println("email mer TYP visible"+ emailmer[1]);
-				//String typ_shown=Bikeutility.MER_data(driver);
-				//System.out.println("typ shown is "+ typ_shown);
-					
-				//HashMap arr1= new HashMap();
-			 	//arr1.put("InsurerName", insurer);
-				//arr1.put("CAID", CAID);
-				//arr1.put("Expand open", expand);
-				//arr1.put("PDFlink", pdf_url);
-				//arr1.put("MERtype", "phone");
-				//arr1.put("MERstatus", typ_shown);
+		
 				 
 				ArrayList<String> arr1= new ArrayList<String>();
 				arr1.add(insurer);
